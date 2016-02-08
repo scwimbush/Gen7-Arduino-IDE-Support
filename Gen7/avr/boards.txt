@@ -1,0 +1,63 @@
+menu.cpu=Processor
+
+##############################################################
+
+Gen7.name=RepRap Generation 7 Electronics
+
+Gen7.upload.tool=arduino:avrdude
+Gen7.upload.protocol=stk500v2
+Gen7.upload.speed=115200
+
+Gen7.bootloader.tool=arduino:avrdude
+Gen7.bootloader.low_fuses=0xF7
+Gen7.bootloader.high_fuses=0xDC
+Gen7.bootloader.extended_fuses=0xFC
+Gen7.bootloader.path=Gen7
+Gen7.bootloader.unlock_bits=0x3F
+Gen7.bootloader.lock_bits=0x0F
+
+Gen7.build.board=AVR_GEN7
+Gen7.build.core=arduino:arduino
+Gen7.build.variant=gen7
+
+###### ATmega644
+
+Gen7.menu.cpu.atmega644-16=ATmega644 at 16 MHz
+Gen7.menu.cpu.atmega644-16.upload.maximum_size=63488
+Gen7.menu.cpu.atmega644-16.bootloader.file=Gen7/bootloader-644-16MHz.hex
+Gen7.menu.cpu.atmega644-16.build.mcu=atmega644
+Gen7.menu.cpu.atmega644-16.build.f_cpu=16000000L
+
+Gen7.menu.cpu.atmega644-20=ATmega644 at 20 MHz
+Gen7.menu.cpu.atmega644-20.upload.maximum_size=63488
+Gen7.menu.cpu.atmega644-20.bootloader.file=Gen7/bootloader-644-20MHz.hex
+Gen7.menu.cpu.atmega644-20.build.mcu=atmega644
+Gen7.menu.cpu.atmega644-20.build.f_cpu=20000000L
+
+###### ATmega644P
+
+Gen7.menu.cpu.atmega644P-16=ATmega644P at 16 MHz
+Gen7.menu.cpu.atmega644P-16.upload.maximum_size=63488
+Gen7.menu.cpu.atmega644P-16.bootloader.file=Gen7/bootloader-644P-16MHz.hex
+Gen7.menu.cpu.atmega644P-16.build.mcu=atmega644p
+Gen7.menu.cpu.atmega644P-16.build.f_cpu=16000000L
+
+Gen7.menu.cpu.atmega644P-20=ATmega644P at 20 MHz
+Gen7.menu.cpu.atmega644P-20.upload.maximum_size=63488
+Gen7.menu.cpu.atmega644P-20.bootloader.file=Gen7/bootloader-644P-20MHz.hex
+Gen7.menu.cpu.atmega644P-20.build.mcu=atmega644p
+Gen7.menu.cpu.atmega644P-20.build.f_cpu=20000000L
+
+###### ATmega1284P
+
+Gen7.menu.cpu.atmega1284P-16=ATmega1284P at 16 MHz
+Gen7.menu.cpu.atmega1284P-16.upload.maximum_size=129024
+Gen7.menu.cpu.atmega1284P-16.bootloader.file=Gen7/bootloader-1284P-16MHz.hex
+Gen7.menu.cpu.atmega1284P-16.build.mcu=atmega1284p
+Gen7.menu.cpu.atmega1284P-16.build.f_cpu=16000000L
+
+Gen7.menu.cpu.atmega1284P-20=ATmega1284P at 20 MHz
+Gen7.menu.cpu.atmega1284P-20.upload.maximum_size=129024
+Gen7.menu.cpu.atmega1284P-20.bootloader.file=Gen7/bootloader-1284P-20MHz.hex
+Gen7.menu.cpu.atmega1284P-20.build.mcu=atmega1284p
+Gen7.menu.cpu.atmega1284P-20.build.f_cpu=20000000L
