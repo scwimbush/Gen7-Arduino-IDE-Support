@@ -18,7 +18,7 @@ Gen7.bootloader.lock_bits=0x0F
 
 Gen7.build.board=AVR_GEN7
 Gen7.build.core=arduino:arduino
-Gen7.build.variant=gen7
+Gen7.build.variant=Gen7
 
 ###### ATmega644
 
